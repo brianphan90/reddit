@@ -19,9 +19,9 @@ export class User {
 
   @Field(() => String)
   @Property({type : "text", unique : true})
-  username!: String;
+  username!: string;
 
   //removing field -> doesn't allow for selection, just a column
   @Property({type : "text", unique : true})
-  password!: String;
+  password!: string;
 }
